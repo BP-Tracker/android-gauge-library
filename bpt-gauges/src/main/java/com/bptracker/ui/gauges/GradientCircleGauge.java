@@ -23,7 +23,6 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 public class GradientCircleGauge extends LinearLayout {
 
     private Context mContext;
@@ -99,6 +98,14 @@ public class GradientCircleGauge extends LinearLayout {
         }
 
         init();
+    }
+
+    public GradientCircleGauge(Context context, AttributeSet attrs, int defStyleAttr) {
+        this(context, attrs);
+    }
+
+    public GradientCircleGauge(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        this(context, attrs);
     }
 
     private void setInitDefaults(Context context){
