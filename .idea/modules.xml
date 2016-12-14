@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-gauge-library.iml" filepath="$PROJECT_DIR$/android-gauge-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bpt-gauges/bpt-gauges.iml" filepath="$PROJECT_DIR$/bpt-gauges/bpt-gauges.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example-app/example-app.iml" filepath="$PROJECT_DIR$/example-app/example-app.iml" />
+    </modules>
+  </component>
+</project>

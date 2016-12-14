@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientCircleGauge">
+        <!-- TODO: add support for radius and thickness properties -->
+        <!--
+            <attr name="radius" format="dimension" />
+            <attr name="thickness" format="dimension" />
+
+            For now, set a default_circle_gauge_radius and
+             default_circle_gauge_thickness dimension to override the default
+        -->
+
+        <attr name="backgroundColor" format="color" />
+        <attr name="backgroundVisible" format="boolean" />
+        <attr name="foregroundStartColor" format="color" />
+        <attr name="foregroundCenterColor" format="color" />
+        <attr name="foregroundEndColor" format="color" />
+        <attr name="titleText" format="string" />
+        <attr name="titleTextRadius" format="dimension" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="animation" format="boolean" />
+        <attr name="progressLabel" format="string" />
+        <attr name="additionalLabel" format="string" />
+        <attr name="additionalValue" format="string" />
+    </declare-styleable>
+</resources>

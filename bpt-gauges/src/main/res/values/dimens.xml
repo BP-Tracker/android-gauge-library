@@ -1,0 +1,8 @@
+<resources>
+    <!-- GradientCircleGauge defaults -->
+    <dimen name="default_circle_gauge_radius">60dp</dimen>
+    <dimen name="default_circle_gauge_thickness">8dp</dimen>
+
+    <dimen name="default_circle_gague_text_size">15sp</dimen>
+    <dimen name="default_circle_gauge_text_radius">72dp</dimen>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/progress">
+        <shape
+            android:innerRadius="@dimen/default_circle_gauge_radius"
+            android:shape="ring"
+            android:thickness="@dimen/default_circle_gauge_thickness"
+            android:useLevel="true">
+
+            <gradient
+                android:startColor="@color/default_fg_circle_gauge_start_color"
+                android:centerColor="#b8dae9"
+                android:endColor="@color/default_fg_circle_gauge_end_color"
+                android:angle="0"
+                android:useLevel="true"
+                android:type="sweep" />
+        </shape>
+    </item>
+</layer-list>

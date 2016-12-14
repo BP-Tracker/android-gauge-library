@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GradientCircleGauge -->
+    <color name="default_bg_circle_gauge_color">#ABBAC2</color>
+
+    <color name="default_fg_circle_gauge_start_color">#125D9D</color>
+    <color name="default_fg_circle_gauge_center_color">#b8dae9</color>
+    <color name="default_fg_circle_gauge_end_color">#125D9D</color>
+
+    <color name="circle_gauge_text_value_color">#FF000000</color>
+    <color name="circle_gauge_text_label_color">#6B767D</color>
+
+</resources>

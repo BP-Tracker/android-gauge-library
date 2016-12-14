@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bptracker.example.MainActivity">
+
+    <com.bptracker.ui.gauges.GradientCircleGauge
+        android:id="@+id/gcg_gauge_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        gauge:backgroundVisible="false"
+        gauge:titleText="Battery"
+        gauge:titleTextRadius="73dp"
+        gauge:titleTextSize="15sp"
+        gauge:animation="true"
+        gauge:additionalLabel="CHARGE CYCLE"
+        gauge:additionalValue="232323"
+        gauge:progressLabel="RESERVE"
+        gauge:foregroundStartColor="#125D9D"
+        gauge:foregroundEndColor="#125D9D" />
+
+    <com.bptracker.ui.gauges.GradientCircleGauge
+        android:id="@+id/gcg_gauge_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        gauge:animation="false"
+        gauge:backgroundVisible="true"
+        gauge:titleText="Signal Strength"
+        gauge:backgroundColor="#e1e1e1"
+        gauge:progressLabel="HEALTH"
+        gauge:titleTextSize="15sp" />
+
+</LinearLayout>

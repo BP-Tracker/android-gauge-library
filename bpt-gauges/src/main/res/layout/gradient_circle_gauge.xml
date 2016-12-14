@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:visibility="visible"
+        android:progress="100"
+        android:progressDrawable="@drawable/circle_gauge_background" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:max="100"
+        android:rotation="0"
+        android:indeterminate="false"
+        android:progress="0"
+        android:progressDrawable="@drawable/circle_gauge_foreground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--Additional value -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/circle_gauge_text_value_color" />
+
+        <!--Additional label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="OBSERVATIONS"
+            android:paddingBottom="5dp"
+            android:textColor="@color/circle_gauge_text_label_color" />
+
+        <!--Progress value -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="0%"
+            android:textStyle="bold"
+            android:textColor="@color/circle_gauge_text_value_color" />
+
+        <!--Progress label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text=""
+            android:paddingBottom="10dp"
+            android:textColor="@color/circle_gauge_text_label_color" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

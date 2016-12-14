@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+// This is the library version used when deploying the artifact
+version = '0.0.1'
+
+
+ext {
+    bintrayRepo = 'android'
+    bintrayName = 'bpt-gauges'
+    bintrayOrg = 'BP-Tracker'
+    
+    publishedGroupId = 'com.bptracker.ui.gauges'
+    libraryName = 'Android UI Gauges library '
+    artifact = 'gauges'
+
+    libraryDescription = ''
+
+    siteUrl = 'https://github.com/BP-Tracker/android-gauge-library'
+    gitUrl = 'https://github.com/BP-Tracker/android-gauge-library.git'
+
+    libraryVersion = project.version
+
+    developerId = ''
+    developerName = ''
+    developerEmail = ''
+
+    licenseName = ''
+    licenseUrl = ''
+    allLicenses = ["MIT"]
+}
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName project.version
+    }
+    //buildTypes {
+    //    release {
+    //        minifyEnabled false
+    //        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    //    }
+    //}
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+}
