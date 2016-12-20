@@ -47,6 +47,7 @@ public class GradientCircleGauge extends LinearLayout {
     private String mAttrProgressLabel;
     private String mAttrAdditionalLabel;
     private String mAttrAdditionalValue;
+    private int mAttrGaugeLevel;
 
 
     /** UI elements **/
@@ -92,6 +93,7 @@ public class GradientCircleGauge extends LinearLayout {
             mAttrAdditionalValue = t.getString(R.styleable.GradientCircleGauge_additionalValue);
             mAttrAdditionalLabel = t.getString(R.styleable.GradientCircleGauge_additionalLabel);
             mAttrProgressLabel = t.getString(R.styleable.GradientCircleGauge_progressLabel);
+            mAttrGaugeLevel = t.getInteger(R.styleable.GradientCircleGauge_gaugeLevel, mAttrGaugeLevel);
 
         } finally {
             t.recycle();
@@ -122,6 +124,7 @@ public class GradientCircleGauge extends LinearLayout {
         mTitleTextRadius = context.getResources().getDimension(R.dimen.default_circle_gauge_text_radius);
         mTitleTextSize = context.getResources().getDimension(R.dimen.default_circle_gague_text_size);
         mZeroAxisDegrees = 270; //top
+        mAttrGaugeLevel = 0; // initial gauge level
         mAnimationEnabled = true;
     }
 
@@ -180,6 +183,7 @@ public class GradientCircleGauge extends LinearLayout {
             bgGradient.setColors(new int[]{bgColor, bgColor} );
         }
 
+        //TODO: check if custom attributes have been set instead
         if(fgStartColor != ContextCompat.getColor(mContext, R.color.default_fg_circle_gauge_start_color)){
             fgGradient.mutate();
             fgGradient.setColors(new int[]{fgStartColor, fgCenterColor, fgEndColor} );
@@ -191,6 +195,8 @@ public class GradientCircleGauge extends LinearLayout {
 
         mProgressBarBg.setVisibility(mBackgroundVisible ? VISIBLE : INVISIBLE);
         mProgressBarFg.setRotation(270); // progress starts at 0
+
+        setGaugeLevel(mAttrGaugeLevel, true); // initial level
     }
 
     /** for setGaugeLevel animations **/

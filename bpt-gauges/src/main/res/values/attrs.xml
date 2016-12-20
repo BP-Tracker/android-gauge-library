@@ -22,5 +22,6 @@
         <attr name="progressLabel" format="string" />
         <attr name="additionalLabel" format="string" />
         <attr name="additionalValue" format="string" />
+        <attr name="gaugeLevel" format="integer" />
     </declare-styleable>
 </resources>
